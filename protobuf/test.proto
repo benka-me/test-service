@@ -1,0 +1,12 @@
+syntax = "proto3";
+package test;
+option go_package = "github.com/benka-me/test-service/go-pkg/test";
+
+message Request {
+    string Msg = 1;
+}
+
+message Greeting {
+    string Msg = 1;
+}
+

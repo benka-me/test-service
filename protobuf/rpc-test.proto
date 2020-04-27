@@ -1,0 +1,9 @@
+syntax = "proto3";
+package test;
+
+option go_package = "github.com/benka-me/test-service/go-pkg/test";
+import "test.proto";
+
+service Test {
+    rpc HelloWorld (test.Request) returns (test.Greeting);
+}

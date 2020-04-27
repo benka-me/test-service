@@ -1,0 +1,28 @@
+name: test-service
+pkgname: test
+pkgnamecamel: Test
+repo: github.com/benka-me/test-service
+author: benka-me
+port: 6334
+public: true
+license: ""
+description: ""
+keywords: ""
+tag: ""
+devlang: 0
+languages:
+  go:
+    setup:
+      active: true
+      protocbinary: gogoslick
+  javascript:
+    setup:
+      active: true
+      protocbinary: ""
+protosetup:
+  files:
+  - test.proto
+  - rpc-test.proto
+isgateway: false
+deps: []
+cons: []
